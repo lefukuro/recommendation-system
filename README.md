@@ -20,7 +20,7 @@ Increase user engagement by providing relevant content recommendations using his
 - Feature importance analysis
 
 ## 📈 Results
-- **ROC-AUC Score**: 0.691
+- **NDCG@5 Score by test data**: 0.609
 - **Key drivers**: User engagement history, content topics, user data, text features, user-topic interactions features
 
 ## 🚀 Quick Start
