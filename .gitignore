@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+.python-version
+
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+logs/
+*.tsv
+*.tmp
+
+# Catboost
+catboost_info/
+
+# Environments
+.env
+.venv
+
