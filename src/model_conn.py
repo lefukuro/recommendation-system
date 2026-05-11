@@ -17,12 +17,9 @@ from dotenv import load_dotenv
 app = FastAPI()
 
 def get_model_path(model_version: str) -> str:
-    if (os.environ.get("IS_LMS") == "1"):
-        model_path = f"/workdir/user_input/model_{model_version}"
-    else:
-        model_path = (
-            f"/Users/lefukuro/Documents/recommendation_system/model/{model_version}"
-        )
+    model_path = (
+        f"model/{model_version}"
+    )
     return model_path
 
 @lru_cache()
