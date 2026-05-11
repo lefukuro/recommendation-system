@@ -11,6 +11,7 @@ Increase user engagement by providing relevant content recommendations using his
 - **CatBoost** for gradient boosting
 - **NLTK and TF-IDF** for text processing
 - **PCA** for dimensionality reduction
+- **transformers** for text embeddings
 
 ## 📊 Key Features
 - EDA, Data preprocessing and feature engineering
@@ -20,16 +21,16 @@ Increase user engagement by providing relevant content recommendations using his
 - Feature importance analysis
 
 ## 📈 Results
-- **NDCG@5 Score by test data**: 0.609
+- **NDCG@5 Score by test data**: 0.607
 - **Key drivers**: User engagement history, content topics, user data, text features, user-topic interactions features
 
-## 🚀 Quick Start
+## 🚀 Quick Start with Docker
 ```bash
-git clone https://github.com/lefukuro/recommendation_system.git
-cd recommendation_system
-pip install -r requirements.txt
+git clone https://github.com/lefukuro/recommendation-system.git
+cd recommendation-system
+docker build -t recsys .
+docker run recsys
 ```
 
 ## 📝 License
 MIT License
-
