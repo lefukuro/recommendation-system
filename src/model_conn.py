@@ -60,7 +60,7 @@ def batch_load_sql(query: str) -> pd.DataFrame:
 
     conn = engine.connect().execution_options(stream_results=True)
     chunks = []
-    for chunk_dataframe in pd.read_sql(query, conn, chunksize=200000):
+    for chunk_dataframe in pd.read_sql(query, conn, chunksize=500000):
         chunks.append(chunk_dataframe)
         logger.info(f'got chunck: {len(chunk_dataframe)}')
     conn.close()
